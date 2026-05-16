@@ -3,374 +3,476 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kasingkal Hotel & Suites | Antique, Philippines</title>
-    <!-- Tailwind CSS CDN -->
+    <title>
+      Kingscourt Travellers' Inn | Budget Lodging in San Jose, Antique
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              warmGold: "#D4AF37",
-              terracotta: "#C85A32",
-              sand: "#F7F4EF",
-              charcoal: "#2C2A29",
-              clay: "#8C6239",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              serif: ["Playfair Display", "serif"],
-            },
-          },
-        },
-      };
-    </script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      :root {
+        line-height: 1.25;
+      }
+      /* Patadyong-inspired linear gradient backgrounds */
+      .bg-patadyong-pattern {
+        background: linear-gradient(
+          to right,
+          rgba(190, 24, 74, 0.05) 0%,
+          rgba(190, 24, 74, 0.05) 40%,
+          rgba(234, 179, 8, 0.05) 40%,
+          rgba(234, 179, 8, 0.05) 45%,
+          rgba(22, 163, 74, 0.05) 45%,
+          rgba(22, 163, 74, 0.05) 50%,
+          rgba(190, 24, 74, 0.05) 50%
+        );
+        background-size: 80px 100%;
+      }
+      .border-patadyong {
+        border-image: linear-gradient(
+            to right,
+            #be1848 30%,
+            #eab308 30%,
+            #eab308 50%,
+            #16a34a 50%,
+            #16a34a 70%,
+            #d97706 70%
+          )
+          1;
+      }
+    </style>
   </head>
   <body
-    class="bg-sand text-charcoal font-sans antialiased selection:bg-terracotta selection:text-white"
+    class="bg-stone-50 text-stone-800 font-sans antialiased bg-patadyong-pattern"
   >
-    <!-- Header / Navigation -->
+    <div
+      class="bg-amber-600 text-white text-center py-2 px-4 text-sm font-semibold tracking-wide shadow-sm"
+    >
+      🎉 Welcome Binirayan and Sinugba Festival Guests! Walk-ins are welcome
+      24/7. 🎉
+    </div>
+
     <header
-      class="sticky top-0 z-50 bg-sand/90 backdrop-blur-md border-b border-clay/10"
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b-4 border-patadyong"
     >
       <div
-        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+        class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4"
       >
-        <a
-          href="#"
-          class="font-serif text-2xl font-bold tracking-tight text-charcoal hover:text-terracotta transition-colors"
-        >
-          Kasingkal
-          <span class="text-terracotta font-normal italic">Antique</span>
+        <a href="#" class="flex flex-col items-center sm:items-start">
+          <span class="text-2xl font-bold tracking-tight text-rose-800"
+            >Kingscourt Travellers' Inn</span
+          >
+          <span
+            class="text-xs uppercase tracking-widest text-amber-700 font-semibold"
+            >Madrangca, San Jose, Antique</span
+          >
         </a>
-        <nav
-          class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider"
-        >
-          <a href="#rooms" class="hover:text-terracotta transition-colors"
-            >Accommodations</a
+        <nav class="flex space-x-1 font-medium text-stone-600">
+          <a
+            href="#rooms"
+            class="px-3 py-2 rounded-md hover:text-rose-700 hover:bg-stone-100 transition-colors"
+            >Our Rooms</a
           >
-          <a href="#explore" class="hover:text-terracotta transition-colors"
-            >Explore & Dine</a
+          <a
+            href="#local-guide"
+            class="px-3 py-2 rounded-md hover:text-rose-700 hover:bg-stone-100 transition-colors"
+            >Local Guide</a
           >
-          <a href="#contact" class="hover:text-terracotta transition-colors"
-            >Location & Contact</a
+          <a
+            href="#find-us"
+            class="px-3 py-2 rounded-md hover:text-rose-700 hover:bg-stone-100 transition-colors"
+            >Find Us</a
           >
         </nav>
-        <a
-          href="#contact"
-          class="bg-terracotta text-white px-5 py-2.5 text-sm font-medium rounded-sm hover:bg-clay transition-colors shadow-sm"
-        >
-          Book Your Stay
-        </a>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative bg-clay/10 py-24 md:py-32 border-b border-clay/10">
-      <div class="max-w-4xl mx-auto text-center px-6">
+    <section class="relative bg-rose-900 text-white overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center mix-blend-overlay"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-rose-700 via-amber-500 to-emerald-600"
+      ></div>
+
+      <div class="relative max-w-4xl mx-auto px-4 py-16 sm:py-24 text-center">
         <span
-          class="text-xs font-semibold tracking-widest uppercase text-terracotta block mb-3"
-          >Welcome to Western Visayas</span
+          class="inline-block bg-emerald-600/90 text-white text-xs uppercase font-bold tracking-widest px-3 py-1 rounded-full mb-4 shadow-sm"
+          >Your Budget-Friendly Getaway</span
         >
         <h1
-          class="font-serif text-4xl md:text-6xl text-charcoal font-bold leading-tight mb-6"
+          class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 drop-shadow-sm"
         >
-          Where the mountains meet the
-          <span class="italic font-normal text-clay">antique</span> sea.
+          Experience Warm Antiqueño Hospitality
         </h1>
         <p
-          class="text-lg text-charcoal/80 max-w-2xl mx-auto leading-relaxed mb-8"
+          class="text-lg sm:text-xl text-rose-100 max-w-2xl mx-auto mb-8 font-normal"
         >
-          Experience the raw beauty, warm hospitality, and slow-paced coastal
-          living of Antique province. Your quiet sanctuary awaits.
+          Simple, clean, and comfortable rooms for couples, families, and
+          festival backpackers. Enjoy an affordable stay right where the coast
+          meets culture.
         </p>
-        <div class="h-[1px] w-20 bg-terracotta mx-auto"></div>
-      </div>
-    </section>
-
-    <!-- Rooms Section -->
-    <section id="rooms" class="py-20 max-w-7xl mx-auto px-6">
-      <div class="mb-12 text-center md:text-left">
-        <span
-          class="text-xs font-semibold tracking-widest uppercase text-terracotta block mb-2"
-          >Our Spaces</span
-        >
-        <h2 class="font-serif text-3xl md:text-4xl font-bold">
-          Available Accommodations
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- 1 Bedroom -->
         <div
-          class="bg-white border border-clay/10 rounded-sm overflow-hidden shadow-sm flex flex-col justify-between"
+          class="bg-white/10 backdrop-blur-md rounded-xl p-4 inline-flex flex-col sm:flex-row items-center justify-center gap-4 border border-white/20 shadow-lg"
         >
-          <div>
-            <div
-              class="bg-clay/20 h-52 flex items-center justify-center text-clay font-medium italic"
-            >
-              [ 1-Bedroom Image Placeholder ]
-            </div>
-            <div class="p-6">
-              <h3 class="font-serif text-xl font-bold mb-2">
-                Standard 1-Bedroom
-              </h3>
-              <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">
-                Perfect for solo travelers or couples. Includes a queen-sized
-                bed, private bath, dedicated workspace, and high-speed Wi-Fi.
-              </p>
-            </div>
+          <div class="text-left sm:border-r border-white/20 pr-0 sm:pr-6">
+            <p class="text-xs text-rose-200 uppercase font-bold tracking-wider">
+              Ready to reserve?
+            </p>
+            <p class="text-xl font-bold text-amber-300">
+              Call Therese: 09702942566
+            </p>
           </div>
-          <div
-            class="p-6 pt-0 border-t border-sand mt-auto flex items-center justify-between"
-          >
-            <span
-              class="text-sm font-semibold tracking-wider uppercase text-terracotta"
-              >From ₱2,500 / night</span
-            >
-          </div>
-        </div>
-
-        <!-- 2 Bedroom -->
-        <div
-          class="bg-white border border-clay/10 rounded-sm overflow-hidden shadow-sm flex flex-col justify-between"
-        >
-          <div>
-            <div
-              class="bg-clay/20 h-52 flex items-center justify-center text-clay font-medium italic"
-            >
-              [ 2-Bedroom Image Placeholder ]
-            </div>
-            <div class="p-6">
-              <h3 class="font-serif text-xl font-bold mb-2">
-                Deluxe 2-Bedroom Suite
-              </h3>
-              <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">
-                Designed for small groups or friends. Features one master
-                bedroom, a twin bedroom, a shared living space, and a private
-                balcony.
-              </p>
-            </div>
-          </div>
-          <div
-            class="p-6 pt-0 border-t border-sand mt-auto flex items-center justify-between"
-          >
-            <span
-              class="text-sm font-semibold tracking-wider uppercase text-terracotta"
-              >From ₱4,500 / night</span
-            >
-          </div>
-        </div>
-
-        <!-- Family Room -->
-        <div
-          class="bg-white border border-clay/10 rounded-sm overflow-hidden shadow-sm flex flex-col justify-between"
-        >
-          <div>
-            <div
-              class="bg-clay/20 h-52 flex items-center justify-center text-clay font-medium italic"
-            >
-              [ Family Room Image Placeholder ]
-            </div>
-            <div class="p-6">
-              <h3 class="font-serif text-xl font-bold mb-2">
-                Heritage Family Suite
-              </h3>
-              <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">
-                Spacious layout comfortably hosting up to 6 guests. Equipped
-                with multiple beds, a kitchenette, and ample dining space for
-                family gatherings.
-              </p>
-            </div>
-          </div>
-          <div
-            class="p-6 pt-0 border-t border-sand mt-auto flex items-center justify-between"
-          >
-            <span
-              class="text-sm font-semibold tracking-wider uppercase text-terracotta"
-              >From ₱6,500 / night</span
-            >
+          <div class="text-center sm:text-left">
+            <p class="text-xs text-rose-200 uppercase font-bold tracking-wider">
+              Need a cheap room tonight?
+            </p>
+            <p class="text-md font-semibold text-white">
+              Walk-ins Welcome 24/7!
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Things to Do & Food Section -->
+    <section class="max-w-4xl mx-auto px-4 py-12 text-center">
+      <div
+        class="inline-flex justify-center space-x-1 mb-4 text-rose-700 text-xl font-bold"
+      >
+        <span>✦</span><span>🎨</span><span>✦</span>
+      </div>
+      <h2 class="text-2xl font-bold text-stone-900 mb-4">
+        Comfortable Stay Without the Luxury Price Tag
+      </h2>
+      <p class="text-stone-600 max-w-2xl mx-auto">
+        At Kingscourt Travellers' Inn, we celebrate the vibrant textures of
+        Antique. Our home is inspired by the traditional rich tones of the local
+        <strong>patadyong textile</strong>—blending deep warm fuchsia, bright
+        amber gold, and fresh emerald green to bring you a casual, relaxing
+        tropical escape. Enjoy your stay while exploring the beautiful Western
+        Visayas!
+      </p>
+    </section>
+
     <section
-      id="explore"
-      class="py-20 bg-clay/5 border-t border-b border-clay/10"
+      id="rooms"
+      class="max-w-6xl mx-auto px-4 py-12 border-t border-stone-200"
     >
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <!-- Things to Do -->
-          <div>
-            <div class="mb-8">
-              <span
-                class="text-xs font-semibold tracking-widest uppercase text-terracotta block mb-2"
-                >Local Guide</span
-              >
-              <h2 class="font-serif text-3xl font-bold">Things to Do Nearby</h2>
-            </div>
-            <ul class="space-y-6">
-              <li class="border-b border-clay/10 pb-4">
-                <h4 class="font-medium text-lg text-charcoal mb-1">
-                  Malalison Island Excursion
-                </h4>
-                <p class="text-sm text-charcoal/70 leading-relaxed">
-                  Take a short boat ride to experience pristine white sand bars,
-                  rolling hills, and crystal-clear snorkeling spots.
-                </p>
-              </li>
-              <li class="border-b border-clay/10 pb-4">
-                <h4 class="font-medium text-lg text-charcoal mb-1">
-                  Kawa Hot Bath in Tibiao
-                </h4>
-                <p class="text-sm text-charcoal/70 leading-relaxed">
-                  Relax in a unique, oversized wood-fired cauldron filled with
-                  fresh spring water and local aromatic leaves.
-                </p>
-              </li>
-              <li>
-                <h4 class="font-medium text-lg text-charcoal mb-1">
-                  Bugtong Bato Waterfalls
-                </h4>
-                <p class="text-sm text-charcoal/70 leading-relaxed">
-                  Trek through beautiful rice terraces to discover a
-                  multi-tiered crystal-clear waterfall hidden in nature.
-                </p>
-              </li>
-            </ul>
-          </div>
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
+          Our Budget-Friendly Rooms
+        </h2>
+        <p class="text-stone-500 mt-2">
+          Clean, cozy, and perfect for cooling off after a long day of festivals
+          or beach hopping.
+        </p>
+      </div>
 
-          <!-- Food to Eat -->
-          <div>
-            <div class="mb-8">
-              <span
-                class="text-xs font-semibold tracking-widest uppercase text-terracotta block mb-2"
-                >Culinary Experience</span
-              >
-              <h2 class="font-serif text-3xl font-bold">Flavors of Antique</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
+        >
+          <div
+            class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
+          >
+            <span
+              class="absolute top-3 right-3 bg-rose-700 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
+              >Best Value</span
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900">1-Bedroom Setup</h3>
+              <p class="text-stone-500 text-sm mt-1">
+                Ideal for solo travelers or cozy couples.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Standard Air
+                  Conditioning
+                </li>
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Clean linens &
+                  fresh towels
+                </li>
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Private Toilet &
+                  Bath
+                </li>
+              </ul>
             </div>
-            <ul class="space-y-6">
-              <li class="border-b border-clay/10 pb-4">
-                <h4 class="font-medium text-lg text-charcoal mb-1">
-                  Native Chicken Binakol
-                </h4>
-                <p class="text-sm text-charcoal/70 leading-relaxed">
-                  A comforting local soup cooked with fresh coconut water,
-                  lemongrass, and ginger inside a bamboo tube.
-                </p>
-              </li>
-              <li class="border-b border-clay/10 pb-4">
-                <h4 class="font-medium text-lg text-charcoal mb-1">
-                  Freshly Harvested Bandi
-                </h4>
-                <p class="text-sm text-charcoal/70 leading-relaxed">
-                  Antique's signature native delicacy made of local peanuts
-                  fused together with sweet muscovado sugar caramel.
-                </p>
-              </li>
-              <li>
-                <h4 class="font-medium text-lg text-charcoal mb-1">
-                  Coastal Seafood Feast
-                </h4>
-                <p class="text-sm text-charcoal/70 leading-relaxed">
-                  Enjoy daily catches of grilled milkfish, rock lobsters, and
-                  local seaweed salad (Ar-arosep) sourced straight from the
-                  municipal waters.
-                </p>
-              </li>
-            </ul>
+            <div
+              class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-400 font-medium"
+            >
+              Rooms available for couples
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
+        >
+          <div
+            class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
+          >
+            <span
+              class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
+              >Popular Choice</span
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900">2-Bedroom Setup</h3>
+              <p class="text-stone-500 text-sm mt-1">
+                Great for small groups of friends or small families.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Multiple Bed
+                  Configurations
+                </li>
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Strong cooling
+                  system
+                </li>
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Generous storage
+                  space
+                </li>
+              </ul>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-400 font-medium"
+            >
+              Perfect for festival backpackers
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
+        >
+          <div
+            class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
+          >
+            <span
+              class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
+              >Spacious</span
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900">Family Room</h3>
+              <p class="text-stone-500 text-sm mt-1">
+                Spacious layout built for the whole barkada or family.
+              </p>
+              <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Accommodates
+                  larger groups comfortably
+                </li>
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> Additional
+                  seating area
+                </li>
+                <li class="flex items-center">
+                  <span class="text-emerald-600 mr-2">✓</span> budget-friendly
+                  group rates
+                </li>
+              </ul>
+            </div>
+            <div
+              class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-400 font-medium"
+            >
+              Rooms available for families
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact & Map Section -->
-    <section id="contact" class="py-20 max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-        <!-- Contact Details -->
-        <div class="lg:col-span-1">
-          <span
-            class="text-xs font-semibold tracking-widest uppercase text-terracotta block mb-2"
-            >Connect With Us</span
-          >
-          <h2 class="font-serif text-3xl font-bold mb-6">
-            Location & Bookings
+    <section
+      id="local-guide"
+      class="bg-stone-100/80 border-y border-stone-200 py-12"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
+            Explore Madrangca & Beyond
           </h2>
-
-          <div class="space-y-6 text-sm text-charcoal/80">
-            <div>
-              <h4
-                class="font-semibold text-charcoal uppercase tracking-wider text-xs mb-1"
-              >
-                Address
-              </h4>
-              <p>
-                National Highway, Barangay Centro, Tibiao,<br />Antique, 5707
-                Philippines
-              </p>
-            </div>
-            <div>
-              <h4
-                class="font-semibold text-charcoal uppercase tracking-wider text-xs mb-1"
-              >
-                Contact Numbers
-              </h4>
-              <p class="text-lg font-medium text-terracotta tracking-tight">
-                +63 (036) 555-0192
-              </p>
-              <p class="text-lg font-medium text-terracotta tracking-tight">
-                +63 917 123 4567
-              </p>
-            </div>
-            <div>
-              <h4
-                class="font-semibold text-charcoal uppercase tracking-wider text-xs mb-1"
-              >
-                Email
-              </h4>
-              <p>stay@kasingkalantique.com</p>
-            </div>
-          </div>
+          <p class="text-stone-500 mt-2">
+            Get the most out of your cheap getaway with nearby sights,
+            activities, and local culinary delights.
+          </p>
         </div>
 
-        <!-- Map Placeholder -->
-        <div
-          class="lg:col-span-2 w-full h-96 bg-clay/10 border border-clay/10 rounded-sm flex flex-col items-center justify-center relative overflow-hidden"
-        >
-          <!-- Embedded Map Interface Note -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
-            class="absolute inset-0 bg-neutral-200/50 flex items-center justify-center"
+            class="bg-white p-6 rounded-xl shadow-sm border border-stone-200/60"
           >
             <div
-              class="text-center p-6 bg-white shadow-sm border border-clay/10 rounded-sm max-w-xs"
+              class="h-32 w-full bg-stone-200 rounded-lg mb-4 bg-[url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="font-bold text-lg text-stone-900 flex items-center gap-2"
             >
-              <p class="font-medium text-sm text-charcoal mb-2">
-                Interactive Map Location
-              </p>
-              <p class="text-xs text-charcoal/60">
-                Replace this container with your standard Google Maps iframe
-                element to display real-time directions.
-              </p>
-            </div>
+              <span>🏖️</span> Madrangca Beach & Coastlines
+            </h3>
+            <p class="text-sm text-stone-600 mt-2">
+              Just a short walk or tricycle ride away. Relax on the local
+              shores, watch pristine West Philippine Sea sunsets, and chat with
+              friendly local fishermen.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-stone-200/60"
+          >
+            <div
+              class="h-32 w-full bg-stone-200 rounded-lg mb-4 bg-[url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=400&q=80')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="font-bold text-lg text-stone-900 flex items-center gap-2"
+            >
+              <span>🎭</span> Binirayan & Sinugba Festivals
+            </h3>
+            <p class="text-sm text-stone-600 mt-2">
+              Immerse yourself in Antique's premier celebrations! Experience
+              rich theatrical street dances commemorating Malayan roots,
+              alongside smoky, delicious community grilling fests.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm border border-stone-200/60"
+          >
+            <div
+              class="h-32 w-full bg-stone-200 rounded-lg mb-4 bg-[url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="font-bold text-lg text-stone-900 flex items-center gap-2"
+            >
+              <span>🐟</span> Local Eats & Fresh Seafood
+            </h3>
+            <p class="text-sm text-stone-600 mt-2">
+              Indulge in budget-friendly open-air diners near the town plaza.
+              Feast on fresh *sinugba* (grilled fish), native chicken dishes,
+              and traditional Antiqueño delicacies.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <section id="find-us" class="max-w-4xl mx-auto px-4 py-12">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
+          Find Us & Secure Your Room
+        </h2>
+        <p class="text-stone-500 mt-2">
+          We keep our operational costs low to offer you the cheapest possible
+          rates in town!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 flex flex-col justify-between h-full"
+        >
+          <div>
+            <h3
+              class="text-xl font-bold text-rose-800 mb-4 pb-2 border-b border-stone-100"
+            >
+              Quick Contact Info
+            </h3>
+            <div class="space-y-4">
+              <div>
+                <p
+                  class="text-xs uppercase tracking-wider text-stone-400 font-semibold"
+                >
+                  For Direct Reservations
+                </p>
+                <p class="text-lg font-bold text-stone-800">
+                  📱 Call Therese: 09702942566
+                </p>
+              </div>
+              <div>
+                <p
+                  class="text-xs uppercase tracking-wider text-stone-400 font-semibold"
+                >
+                  Email Enquiries
+                </p>
+                <p class="text-md font-medium text-rose-700 break-all">
+                  ✉️ jpdelossantos05@gmail.com
+                </p>
+              </div>
+              <div
+                class="bg-amber-50 rounded-xl p-3 border border-amber-200/60 text-sm text-amber-900"
+              >
+                <p class="font-bold">✨ No Booking App Needed!</p>
+                <p class="mt-0.5">
+                  Save money on platform fees. Call us directly or simply walk
+                  in anytime—our front desk is open 24 hours, 7 days a week.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 mt-6 italic text-center">
+            Enjoy your stay in Antique!
+          </p>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 h-full flex flex-col"
+        >
+          <h3
+            class="text-xl font-bold text-stone-900 mb-4 pb-2 border-b border-stone-100"
+          >
+            Our Location
+          </h3>
+          <p class="text-sm text-stone-600 mb-4">
+            Conveniently located in
+            <strong>Madrangca, San Jose, Antique, Philippines</strong>. Easy
+            access via local tricycle networks from the airport and public
+            terminals.
+          </p>
+          <div
+            class="bg-stone-100 rounded-xl border border-stone-200 flex-1 min-h-[160px] flex flex-col items-center justify-center p-4 text-center"
+          >
+            <span class="text-3xl mb-2">📍</span>
+            <p class="text-sm font-semibold text-stone-700 px-4">
+              View our exact location directly on Google Maps
+            </p>
+            <a
+              href="https://maps.app.goo.gl/Y7NDH1PV2dqisrdU6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-4 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-colors"
+            >
+              Open Map Route
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer
-      class="bg-charcoal text-sand py-12 text-center text-xs tracking-wider uppercase border-t border-clay/20"
+      class="bg-stone-900 text-stone-400 text-xs py-8 px-4 border-t-4 border-patadyong"
     >
-      <p>&copy; 2026 Kasingkal Antique Lodging. All Rights Reserved.</p>
+      <div
+        class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4"
+      >
+        <div class="text-center sm:text-left">
+          <p class="font-bold text-stone-200">Kingscourt Travellers' Inn</p>
+          <p class="mt-0.5">
+            Madrangca, San Jose, Antique, Western Visayas, Philippines
+          </p>
+        </div>
+        <div class="text-center sm:text-right">
+          <p>&copy; 2026 Kingscourt Travellers' Inn. All rights reserved.</p>
+          <p class="mt-0.5 text-stone-500">
+            Providing warm, clean, and cheap getaways for travelers and locals
+            alike.
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
