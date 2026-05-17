@@ -11,158 +11,125 @@
       :root {
         line-height: 1.25;
       }
-      /* Patadyong-inspired linear gradient backgrounds */
+      /* Patadyong-inspired background using only shades of red and orange */
       .bg-patadyong-pattern {
         background: linear-gradient(
           to right,
-          rgba(190, 24, 74, 0.05) 0%,
-          rgba(190, 24, 74, 0.05) 40%,
-          rgba(234, 179, 8, 0.05) 40%,
-          rgba(234, 179, 8, 0.05) 45%,
-          rgba(22, 163, 74, 0.05) 45%,
-          rgba(22, 163, 74, 0.05) 50%,
-          rgba(190, 24, 74, 0.05) 50%
+          rgba(153, 27, 27, 0.04) 0%,
+          rgba(153, 27, 27, 0.04) 40%,
+          rgba(234, 88, 12, 0.04) 40%,
+          rgba(234, 88, 12, 0.04) 50%,
+          rgba(249, 115, 22, 0.04) 50%,
+          rgba(249, 115, 22, 0.04) 70%,
+          rgba(153, 27, 27, 0.04) 70%
         );
         background-size: 80px 100%;
       }
       .border-patadyong {
         border-image: linear-gradient(
             to right,
-            #be1848 30%,
-            #eab308 30%,
-            #eab308 50%,
-            #16a34a 50%,
-            #16a34a 70%,
-            #d97706 70%
+            #991b1b 0%,
+            #c2410c 35%,
+            #ea580c 65%,
+            #f97316 100%
           )
           1;
       }
     </style>
   </head>
   <body
-    class="bg-stone-50 text-stone-800 font-sans antialiased bg-patadyong-pattern"
+    class="bg-orange-50/30 text-stone-800 font-sans antialiased bg-patadyong-pattern"
   >
     <div
-      class="bg-amber-600 text-white text-center py-2 px-4 text-sm font-semibold tracking-wide shadow-sm"
+      class="bg-orange-600 text-white text-center py-2 px-15 text-md font-semibold tracking-wide shadow-sm leading-7 border-patadyong"
     >
-      🎉 Welcome Binirayan and Sinugba Festival Guests! Walk-ins are welcome
-      24/7. 🎉
+      <p>Kinahanglan kaw barato nga kwarto karun nga gabi-i?</p>
+      <p>Walk-ins Welcome 24/7!</p>
     </div>
 
-    <header
-      class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b-4 border-patadyong"
-    >
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
       <div
         class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4"
       >
         <a href="#" class="flex flex-col items-center sm:items-start">
-          <span class="text-2xl font-bold tracking-tight text-rose-800"
+          <span class="text-2xl font-bold tracking-tight text-red-800"
             >Kingscourt Travellers' Inn</span
           >
           <span
-            class="text-xs uppercase tracking-widest text-amber-700 font-semibold"
+            class="text-xs uppercase tracking-widest text-orange-700 font-semibold"
             >Madrangca, San Jose, Antique</span
           >
         </a>
         <nav class="flex space-x-1 font-medium text-stone-600">
           <a
             href="#rooms"
-            class="px-3 py-2 rounded-md hover:text-rose-700 hover:bg-stone-100 transition-colors"
+            class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
             >Our Rooms</a
           >
           <a
             href="#local-guide"
-            class="px-3 py-2 rounded-md hover:text-rose-700 hover:bg-stone-100 transition-colors"
+            class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
             >Local Guide</a
           >
           <a
             href="#find-us"
-            class="px-3 py-2 rounded-md hover:text-rose-700 hover:bg-stone-100 transition-colors"
+            class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
             >Find Us</a
           >
         </nav>
       </div>
     </header>
 
-    <section class="relative bg-rose-900 text-white overflow-hidden">
+    <section class="relative text-center text-white overflow-hidden">
       <div
-        class="absolute inset-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center mix-blend-overlay"
-      ></div>
-      <div
-        class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-rose-700 via-amber-500 to-emerald-600"
+        class="absolute inset-0 opacity-80 bg-[url('https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center"
       ></div>
 
       <div class="relative max-w-4xl mx-auto px-4 py-16 sm:py-24 text-center">
-        <span
-          class="inline-block bg-emerald-600/90 text-white text-xs uppercase font-bold tracking-widest px-3 py-1 rounded-full mb-4 shadow-sm"
-          >Your Budget-Friendly Getaway</span
-        >
         <h1
-          class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 drop-shadow-sm"
+          class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-20 drop-shadow-sm"
         >
           Experience Warm Antiqueño Hospitality
         </h1>
-        <p
-          class="text-lg sm:text-xl text-rose-100 max-w-2xl mx-auto mb-8 font-normal"
-        >
-          Simple, clean, and comfortable rooms for couples, families, and
-          festival backpackers. Enjoy an affordable stay right where the coast
-          meets culture.
-        </p>
         <div
-          class="bg-white/10 backdrop-blur-md rounded-xl p-4 inline-flex flex-col sm:flex-row items-center justify-center gap-4 border border-white/20 shadow-lg"
+          class="bg-white/10 backdrop-blur-md rounded-xl px-4 text-lg sm:text-xl mx-60 py-5 font-normal"
         >
-          <div class="text-left sm:border-r border-white/20 pr-0 sm:pr-6">
-            <p class="text-xs text-rose-200 uppercase font-bold tracking-wider">
-              Ready to reserve?
-            </p>
-            <p class="text-xl font-bold text-amber-300">
-              Call Therese: 09702942566
-            </p>
-          </div>
-          <div class="text-center sm:text-left">
-            <p class="text-xs text-rose-200 uppercase font-bold tracking-wider">
-              Need a cheap room tonight?
-            </p>
-            <p class="text-md font-semibold text-white">
-              Walk-ins Welcome 24/7!
-            </p>
+          <div>
+            <p>Ready to reserve?</p>
+            <p>Call Therese: 09702942566</p>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="max-w-4xl mx-auto px-4 py-12 text-center">
+    <section class="max-w-4xl mx-auto px-4 pt-20 text-center">
       <div
-        class="inline-flex justify-center space-x-1 mb-4 text-rose-700 text-xl font-bold"
+        class="inline-flex justify-center space-x-1 mb-4 text-red-700 text-xl font-bold"
       >
-        <span>✦</span><span>🎨</span><span>✦</span>
+        <span>✦</span>
       </div>
-      <h2 class="text-2xl font-bold text-stone-900 mb-4">
-        Comfortable Stay Without the Luxury Price Tag
-      </h2>
-      <p class="text-stone-600 max-w-2xl mx-auto">
-        At Kingscourt Travellers' Inn, we celebrate the vibrant textures of
-        Antique. Our home is inspired by the traditional rich tones of the local
-        <strong>patadyong textile</strong>—blending deep warm fuchsia, bright
-        amber gold, and fresh emerald green to bring you a casual, relaxing
-        tropical escape. Enjoy your stay while exploring the beautiful Western
-        Visayas!
-      </p>
+      <div class="text-stone-600 max-w-2xl mx-auto leading-relaxed">
+        <h2 class="text-2xl font-bold text-stone-900 mb-4">
+          Comfortable Stay Without the Luxury Price Tag
+        </h2>
+        <p>
+          Simple, clean, and comfortable rooms for couples, families, and
+          festival goers.
+        </p>
+        <p>Enjoy an affordable stay right where the coast meets culture.</p>
+      </div>
     </section>
-
     <section
       id="rooms"
-      class="max-w-6xl mx-auto px-4 py-12 border-t border-stone-200"
+      class="max-w-6xl mx-auto px-4 pt-20 border-t border-orange-100"
     >
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
           Our Budget-Friendly Rooms
         </h2>
-        <p class="text-stone-500 mt-2">
-          Clean, cozy, and perfect for cooling off after a long day of festivals
-          or beach hopping.
-        </p>
+        <!-- <p class="text-stone-500 mt-2">
+          Simple, clean, and comfortable rooms for couples, families, and
+          festival goers. Enjoy an affordable stay right where the coast
+          meets culture.-->
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -173,7 +140,7 @@
             class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
           >
             <span
-              class="absolute top-3 right-3 bg-rose-700 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
+              class="absolute top-3 right-3 bg-red-700 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
               >Best Value</span
             >
           </div>
@@ -185,15 +152,15 @@
               </p>
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Standard Air
+                  <span class="text-orange-600 mr-2">✓</span> Standard Air
                   Conditioning
                 </li>
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Clean linens &
+                  <span class="text-orange-600 mr-2">✓</span> Clean linens &
                   fresh towels
                 </li>
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Private Toilet &
+                  <span class="text-orange-600 mr-2">✓</span> Private Toilet &
                   Bath
                 </li>
               </ul>
@@ -213,7 +180,7 @@
             class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
           >
             <span
-              class="absolute top-3 right-3 bg-amber-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
+              class="absolute top-3 right-3 bg-orange-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
               >Popular Choice</span
             >
           </div>
@@ -225,15 +192,15 @@
               </p>
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Multiple Bed
+                  <span class="text-orange-600 mr-2">✓</span> Multiple Bed
                   Configurations
                 </li>
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Strong cooling
+                  <span class="text-orange-600 mr-2">✓</span> Strong cooling
                   system
                 </li>
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Generous storage
+                  <span class="text-orange-600 mr-2">✓</span> Generous storage
                   space
                 </li>
               </ul>
@@ -253,7 +220,7 @@
             class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
           >
             <span
-              class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
+              class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
               >Spacious</span
             >
           </div>
@@ -265,15 +232,15 @@
               </p>
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Accommodates
+                  <span class="text-orange-600 mr-2">✓</span> Accommodates
                   larger groups comfortably
                 </li>
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> Additional
-                  seating area
+                  <span class="text-orange-600 mr-2">✓</span> Additional seating
+                  area
                 </li>
                 <li class="flex items-center">
-                  <span class="text-emerald-600 mr-2">✓</span> budget-friendly
+                  <span class="text-orange-600 mr-2">✓</span> Budget-friendly
                   group rates
                 </li>
               </ul>
@@ -290,16 +257,16 @@
 
     <section
       id="local-guide"
-      class="bg-stone-100/80 border-y border-stone-200 py-12"
+      class="bg-orange-50/50 border-y border-orange-100 py-12"
     >
-      <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-6xl mx-auto px-4 pt-20">
         <div class="text-center mb-10">
           <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
             Explore Madrangca & Beyond
           </h2>
           <p class="text-stone-500 mt-2">
-            Get the most out of your cheap getaway with nearby sights,
-            activities, and local culinary delights.
+            Get the most out of your getaway with nearby sights, activities, and
+            local culinary delights.
           </p>
         </div>
 
@@ -378,7 +345,7 @@
         >
           <div>
             <h3
-              class="text-xl font-bold text-rose-800 mb-4 pb-2 border-b border-stone-100"
+              class="text-xl font-bold text-red-800 mb-4 pb-2 border-b border-stone-100"
             >
               Quick Contact Info
             </h3>
@@ -399,24 +366,21 @@
                 >
                   Email Enquiries
                 </p>
-                <p class="text-md font-medium text-rose-700 break-all">
+                <p class="text-md font-medium text-red-700 break-all">
                   ✉️ jpdelossantos05@gmail.com
                 </p>
               </div>
               <div
-                class="bg-amber-50 rounded-xl p-3 border border-amber-200/60 text-sm text-amber-900"
+                class="bg-orange-50 rounded-xl p-3 border border-orange-200/60 text-sm text-orange-950"
               >
                 <p class="font-bold">✨ No Booking App Needed!</p>
                 <p class="mt-0.5">
-                  Save money on platform fees. Call us directly or simply walk
-                  in anytime—our front desk is open 24 hours, 7 days a week.
+                  Call us directly or simply walk in anytime—our front desk is
+                  open 24 hours, 7 days a week.
                 </p>
               </div>
             </div>
           </div>
-          <p class="text-xs text-stone-400 mt-6 italic text-center">
-            Enjoy your stay in Antique!
-          </p>
         </div>
 
         <div
@@ -444,7 +408,7 @@
               href="https://maps.app.goo.gl/Y7NDH1PV2dqisrdU6"
               target="_blank"
               rel="noopener noreferrer"
-              class="mt-4 bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-colors"
+              class="mt-4 bg-red-700 hover:bg-red-800 text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-colors"
             >
               Open Map Route
             </a>
@@ -453,9 +417,7 @@
       </div>
     </section>
 
-    <footer
-      class="bg-stone-900 text-stone-400 text-xs py-8 px-4 border-t-4 border-patadyong"
-    >
+    <footer class="bg-stone-900 text-stone-400 text-xs py-8 px-4">
       <div
         class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4"
       >
@@ -466,10 +428,10 @@
           </p>
         </div>
         <div class="text-center sm:text-right">
-          <p>&copy; 2026 Kingscourt Travellers' Inn. All rights reserved.</p>
+          <p>© 2026 Kingscourt Travellers' Inn. All rights reserved.</p>
           <p class="mt-0.5 text-stone-500">
-            Providing warm, clean, and cheap getaways for travelers and locals
-            alike.
+            Providing warm, clean, and affordable getaways for travelers and
+            locals alike.
           </p>
         </div>
       </div>
