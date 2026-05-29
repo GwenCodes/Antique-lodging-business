@@ -9,98 +9,101 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       :root {
-        line-height: 1.25;
+        --ruby-red: #962233;
+        --sand: #beae7e;
+        --olive-wood: #877350;
+        --deep-walnut: #4f3822;
       }
-      /* Patadyong-inspired background using only shades of red and orange */
-      .bg-patadyong-pattern {
-        background: linear-gradient(
-          to right,
-          rgba(153, 27, 27, 0.04) 0%,
-          rgba(153, 27, 27, 0.04) 40%,
-          rgba(234, 88, 12, 0.04) 40%,
-          rgba(234, 88, 12, 0.04) 50%,
-          rgba(249, 115, 22, 0.04) 50%,
-          rgba(249, 115, 22, 0.04) 70%,
-          rgba(153, 27, 27, 0.04) 70%
-        );
-        background-size: 80px 100%;
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
       }
-      .border-patadyong {
-        border-image: linear-gradient(
-            to right,
-            #991b1b 0%,
-            #c2410c 35%,
-            #ea580c 65%,
-            #f97316 100%
-          )
-          1;
+      header {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+          url("/img/background-beach.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      img {
+        filter: brightness(0.75);
+      }
+      .cta {
+        background-color: var(--ruby-red);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-weight: bold;
+        font-size: 0.875rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        margin-bottom: 0.75rem;
+        color: var(--ruby-red);
+      }
+      h2 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
       }
     </style>
   </head>
-  <body
-    class="bg-orange-50/30 text-stone-800 font-sans antialiased bg-patadyong-pattern"
-  >
-    <div
-      class="bg-orange-600 text-white text-center py-2 px-15 text-md font-semibold tracking-wide shadow-sm leading-7 border-patadyong"
-    >
-      <p>Kinahanglan kaw barato nga kwarto karun nga gabi-i?</p>
-      <p>Walk-ins Welcome 24/7!</p>
+  <body>
+    <div class="cta">
+      <p>Kruhay!</p>
+      <p>For Reservations, Call Therese: 09702942566</p>
     </div>
 
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <header>
       <div
         class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4"
       >
         <a href="#" class="flex flex-col items-center sm:items-start">
-          <span class="text-2xl font-bold tracking-tight text-red-800"
-            >Kingscourt Travellers' Inn</span
-          >
-          <span
-            class="text-xs uppercase tracking-widest text-orange-700 font-semibold"
-            >Madrangca, San Jose, Antique</span
-          >
+          <span class="text-2xl font-bold tracking-tight text-red-800">
+            Kingscourt Travellers' Inn
+          </span>
         </a>
+
         <nav class="flex space-x-1 font-medium text-stone-600">
           <a
             href="#rooms"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
-            >Our Rooms</a
           >
+            Our Rooms
+          </a>
           <a
             href="#local-guide"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
-            >Local Guide</a
           >
+            Local Guide
+          </a>
           <a
             href="#find-us"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
-            >Find Us</a
           >
+            Find Us
+          </a>
         </nav>
       </div>
-    </header>
-
-    <section class="relative text-center text-white overflow-hidden">
-      <div
-        class="absolute inset-0 opacity-80 bg-[url('https://images.unsplash.com/photo-1540206395-68808572332f?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center"
-      ></div>
-
-      <div class="relative max-w-4xl mx-auto px-4 py-16 sm:py-24 text-center">
-        <h1
-          class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-20 drop-shadow-sm"
-        >
-          Experience Warm Antiqueño Hospitality
-        </h1>
+      <section>
         <div
-          class="bg-white/10 backdrop-blur-md rounded-xl px-4 text-lg sm:text-xl mx-60 py-5 font-normal"
+          class="relative z-10 max-w-4xl mx-auto px-4 py-16 sm:py-24 text-center"
         >
-          <div>
-            <p>Ready to reserve?</p>
-            <p>Call Therese: 09702942566</p>
-          </div>
+          <h3>Kruhay!</h3>
+          <h1>Welcome to Antique</h1>
+          <h2 class="h3">Madranca, San Jose, Antique</h2>
+          <a href="#contact-us" class="cta">Call Us</a>
         </div>
-      </div>
-    </section>
+      </section>
+    </header>
     <section class="max-w-4xl mx-auto px-4 pt-20 text-center">
       <div
         class="inline-flex justify-center space-x-1 mb-4 text-red-700 text-xl font-bold"
@@ -109,7 +112,7 @@
       </div>
       <div class="text-stone-600 max-w-2xl mx-auto leading-relaxed">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">
-          Comfortable Stay Without the Luxury Price Tag
+          Affordable, comfortable lodging in the heart of San Jose, Antique.
         </h2>
         <p>
           Simple, clean, and comfortable rooms for couples, families, and
@@ -127,22 +130,27 @@
           Our Budget-Friendly Rooms
         </h2>
         <!-- <p class="text-stone-500 mt-2">
-          Simple, clean, and comfortable rooms for couples, families, and
-          festival goers. Enjoy an affordable stay right where the coast
-          meets culture.-->
+            Simple, clean, and comfortable rooms for couples, families, and
+            festival goers. Enjoy an affordable stay right where the coast
+            meets culture.-->
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
         <div
-          class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
+          class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
         >
-          <div
-            class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
-          >
+          <div class="relative">
+            <img
+              src="/img/bedroom-a.jpg"
+              alt="1-Bedroom Setup"
+              class="w-full h-48 object-cover"
+            />
+
             <span
               class="absolute top-3 right-3 bg-red-700 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
-              >Best Value</span
             >
+              Best Value
+            </span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -172,17 +180,21 @@
             </div>
           </div>
         </div>
-
         <div
           class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
         >
-          <div
-            class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
-          >
+          <div class="relative">
+            <img
+              src="/img/bedroom-concept.jpg"
+              alt="1-Bedroom Setup"
+              class="w-full h-48 object-cover"
+            />
+
             <span
-              class="absolute top-3 right-3 bg-orange-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
-              >Popular Choice</span
+              class="absolute top-3 right-3 bg-red-700 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
             >
+              Popular Choice
+            </span>
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -212,36 +224,40 @@
             </div>
           </div>
         </div>
-
         <div
           class="bg-white rounded-2xl shadow-sm border border-stone-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow"
         >
           <div
-            class="h-48 bg-stone-200 relative bg-[url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
+            class="relative h-48 bg-stone-200 bg-[url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=80')] bg-cover bg-center"
           >
+            <div class="absolute inset-0 bg-black/50"></div>
+
             <span
               class="absolute top-3 right-3 bg-red-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm"
-              >Spacious</span
             >
+              Spacious
+            </span>
           </div>
+
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-xl font-bold text-stone-900">Family Room</h3>
               <p class="text-stone-500 text-sm mt-1">
                 Spacious layout built for the whole barkada or family.
               </p>
+
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
                 <li class="flex items-center">
-                  <span class="text-orange-600 mr-2">✓</span> Accommodates
-                  larger groups comfortably
+                  <span class="text-orange-600 mr-2">✓</span>
+                  Accommodates larger groups comfortably
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-600 mr-2">✓</span> Additional seating
-                  area
+                  <span class="text-orange-600 mr-2">✓</span>
+                  Additional seating area
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-600 mr-2">✓</span> Budget-friendly
-                  group rates
+                  <span class="text-orange-600 mr-2">✓</span>
+                  Budget-friendly group rates
                 </li>
               </ul>
             </div>
@@ -254,7 +270,6 @@
         </div>
       </div>
     </section>
-
     <section
       id="local-guide"
       class="bg-orange-50/50 border-y border-orange-100 py-12"
