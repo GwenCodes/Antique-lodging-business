@@ -25,6 +25,21 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        padding: 6rem 1rem;
+      }
+      header a {
+        display: inline-block;        
+        background-color: var(--ruby-red);
+        color: white;
+        padding: 1rem 1.5rem 1.5rem;
+        margin-top: 15rem;
+        font-weight: bold;
+        font-size: 1.25rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        border-radius: 0.4rem;        
+        text-align: center;
+        height: auto;       
       }
       img {
         filter: brightness(0.75);
@@ -32,59 +47,68 @@
       .cta {
         background-color: var(--ruby-red);
         color: white;
-        padding: 0.75rem 1.5rem;
+        padding: 1rem 1.5rem;
         font-weight: bold;
         font-size: 0.875rem;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
       }
-      h1 {
+      header h1 {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 3rem;
         font-weight: bold;
-        margin-top: 0.5rem;
+        margin-top: 2rem;
         margin-bottom: 0.75rem;
-        color: var(--ruby-red);
+        color: white;
+        line-height: 1.5;
       }
-      h2 {
+      header h2 {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1.5rem;
+        line-height: 1.5;
+        color: white;
       }
-      h3 {
+      header h3 {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 2rem;
+        line-height: 1.5;
+        color: white;
+        font-weight: 600;
       }
     </style>
   </head>
   <body>
-    <div class="cta">
-      <p>Kruhay!</p>
-      <p>For Reservations, Call Therese: 09702942566</p>
+    <div class="cta">      
+      <p>For Reservations, Call Therese: 0970-294-2566</p>
     </div>
-
-    <header>
+  </body>
+    <nav>
       <div
-        class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4"
+        class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
       >
-        <a href="#" class="flex flex-col items-center sm:items-start">
+        <!-- Logo -->
+        <a href="#" class="flex flex-col sm:flex-row items-center sm:items-center">
           <span class="text-2xl font-bold tracking-tight text-red-800">
             Kingscourt Travellers' Inn
           </span>
         </a>
 
-        <nav class="flex space-x-1 font-medium text-stone-600">
+        <!-- Right-side navigation -->
+        <nav class="flex items-center space-x-4 font-medium text-stone-600">
           <a
             href="#rooms"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
           >
             Our Rooms
           </a>
+
           <a
             href="#local-guide"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
           >
             Local Guide
           </a>
+
           <a
             href="#find-us"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
@@ -93,14 +117,17 @@
           </a>
         </nav>
       </div>
+    </nav>
+
+    <header>      
       <section>
         <div
-          class="relative z-10 max-w-4xl mx-auto px-4 py-16 sm:py-24 text-center"
+          class="text-center"
         >
           <h3>Kruhay!</h3>
           <h1>Welcome to Antique</h1>
           <h2 class="h3">Madranca, San Jose, Antique</h2>
-          <a href="#contact-us" class="cta">Call Us</a>
+          <a href="#contact-us">For Reservations, <br /> Therese: 0970-294-2566</a>
         </div>
       </section>
     </header>
@@ -112,27 +139,22 @@
       </div>
       <div class="text-stone-600 max-w-2xl mx-auto leading-relaxed">
         <h2 class="text-2xl font-bold text-stone-900 mb-4">
-          Affordable, comfortable lodging in the heart of San Jose, Antique.
+          Affordable, comfortable lodging in the heart of <br /> San Jose, Antique.
         </h2>
         <p>
-          Simple, clean, and comfortable rooms for couples, families, and
+          For couples, family reunions, and
           festival goers.
-        </p>
-        <p>Enjoy an affordable stay right where the coast meets culture.</p>
+        </p>       
       </div>
     </section>
     <section
       id="rooms"
-      class="max-w-6xl mx-auto px-4 pt-20 border-t border-orange-100"
+      class="max-w-6xl mx-auto px-4 pt-20 mb-10"
     >
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
           Our Budget-Friendly Rooms
-        </h2>
-        <!-- <p class="text-stone-500 mt-2">
-            Simple, clean, and comfortable rooms for couples, families, and
-            festival goers. Enjoy an affordable stay right where the coast
-            meets culture.-->
+        </h2>        
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -200,12 +222,11 @@
             <div>
               <h3 class="text-xl font-bold text-stone-900">2-Bedroom Setup</h3>
               <p class="text-stone-500 text-sm mt-1">
-                Great for small groups of friends or small families.
+                Great for small families.
               </p>
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
                 <li class="flex items-center">
-                  <span class="text-orange-600 mr-2">✓</span> Multiple Bed
-                  Configurations
+                  <span class="text-orange-600 mr-2">✓</span> Two Beds                  
                 </li>
                 <li class="flex items-center">
                   <span class="text-orange-600 mr-2">✓</span> Strong cooling
@@ -241,9 +262,9 @@
 
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
-              <h3 class="text-xl font-bold text-stone-900">Family Room</h3>
+              <h3 class="text-xl font-bold text-stone-900">Group Rates for Family Rooms</h3>
               <p class="text-stone-500 text-sm mt-1">
-                Spacious layout built for the whole barkada or family.
+                Call to reserve multiple rooms.
               </p>
 
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
@@ -274,7 +295,7 @@
       id="local-guide"
       class="bg-orange-50/50 border-y border-orange-100 py-12"
     >
-      <div class="max-w-6xl mx-auto px-4 pt-20">
+      <div class="max-w-6xl mx-auto px-2 pt-10">
         <div class="text-center mb-10">
           <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
             Explore Madrangca & Beyond
@@ -298,8 +319,8 @@
               <span>🏖️</span> Madrangca Beach & Coastlines
             </h3>
             <p class="text-sm text-stone-600 mt-2">
-              Just a short walk or tricycle ride away. Relax on the local
-              shores, watch pristine West Philippine Sea sunsets, and chat with
+              Just a short walk to the beach. Relax on the local
+              shores, watch the sunset, and chat with
               friendly local fishermen.
             </p>
           </div>
@@ -347,11 +368,7 @@
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-stone-900 tracking-tight">
           Find Us & Secure Your Room
-        </h2>
-        <p class="text-stone-500 mt-2">
-          We keep our operational costs low to offer you the cheapest possible
-          rates in town!
-        </p>
+        </h2>        
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 items-start">
@@ -372,7 +389,7 @@
                   For Direct Reservations
                 </p>
                 <p class="text-lg font-bold text-stone-800">
-                  📱 Call Therese: 09702942566
+                  📱 Call Therese: 0-970-294-2566
                 </p>
               </div>
               <div>
