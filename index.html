@@ -76,6 +76,17 @@
         color: white;
         font-weight: 600;
       }
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2.5rem;
+        }
+        header h2 {
+          font-size: 1.25rem;
+        }
+        header h3 {
+          font-size: 1.5rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -84,12 +95,12 @@
     </div>
     <nav>
       <div
-        class="max-w-6xl mx-auto py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
+        class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
       >
         <!-- Logo -->
         <a
           href="#"
-          class="flex flex-col sm:flex-row items-center sm:items-center"
+          class="flex flex-col items-center sm:flex-row sm:items-center mx-auto sm:mx-0"
         >
           <span class="text-2xl font-bold tracking-tight text-red-800">
             Kingscourt Travellers' Inn
@@ -97,7 +108,9 @@
         </a>
 
         <!-- Right-side navigation -->
-        <nav class="flex items-center space-x-4 font-medium text-[#4f3822]">
+        <nav
+          class="flex items-center space-x-4 font-medium text-[#4f3822] mx-auto sm:mx-0"
+        >
           <a
             href="#rooms"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
@@ -126,8 +139,8 @@
       <section>
         <div class="text-center">
           <h3>Kruhay!</h3>
-          <h1>Welcome to Antique</h1>
-          <h2>Madranca, San Jose, Antique</h2>
+          <h1>Welcome to Madranca</h1>
+          <h2>San Jose, Antique</h2>
           <a href="#contact-us"
             >Call For Reservations <br />
             Therese: 0970-294-2566</a
