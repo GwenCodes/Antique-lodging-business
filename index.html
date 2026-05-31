@@ -77,6 +77,9 @@
         font-weight: 600;
       }
       @media (max-width: 768px) {
+        .cta {
+          display: none;
+        }
         header h1 {
           font-size: 2.5rem;
         }
@@ -99,7 +102,7 @@
     </div>
     <nav>
       <div
-        class="max-w-6xl mx-auto lg:px-0 px-4 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
+        class="class= max-w-3/4 mx-auto px-2 py-4 sm:px-4 lg:w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
       >
         <!-- Logo -->
         <a
@@ -107,7 +110,7 @@
           class="flex flex-col items-center sm:flex-row sm:items-center mx-auto sm:mx-0"
         >
           <span
-            class="text-md sm:text-2xl font-bold tracking-tight text-red-800"
+            class="text-lg sm:text-2xl font-bold tracking-tight text-red-800"
           >
             Kingscourt Travellers' Inn
           </span>
@@ -115,7 +118,7 @@
 
         <!-- Right-side navigation -->
         <nav
-          class="flex items-center space-x-4 font-base sm:font-md text-[#4f3822] mx-auto sm:mx-0"
+          class="flex items-center space-x-4 font-medium text-[#4f3822] text-sm sm:text-base mx-auto sm:mx-0"
         >
           <a
             href="#rooms"
@@ -123,14 +126,12 @@
           >
             Our Rooms
           </a>
-
           <a
             href="#contact-us"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
           >
             Contact Us
           </a>
-
           <a
             href="#find-us"
             class="px-3 py-2 rounded-md hover:text-red-700 hover:bg-orange-50 transition-colors"
