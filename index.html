@@ -30,7 +30,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        height: 100vh;
+        min-height: 100vh;
       }
    
       header button {
@@ -82,6 +82,13 @@
         font-size: 1.125rem;
         font-weight: 500;
       }
+      .nav-bar a:hover {
+        color: var(--ruby-red);
+      }
+      hero-cta-wrapper {
+        display: flex;
+        justify-content: center;        
+      }
 
       .hero-cta {
         padding: 0.75rem 1.25rem;
@@ -94,7 +101,7 @@
         text-align: center;
         display: inline-block;
         width: auto;
-        margin-top: 10rem;
+        margin-top: clamp(5rem, 6vh, 10rem)
       }
       .hero-cta:hover {
         background-color: var(--ruby-red);
@@ -103,8 +110,9 @@
       img {
         filter: brightness(0.75);
       }
-      .cta {
-        background-color: var(--deep-walnut);
+      
+      .cta { 
+        background-color: #16110c;
         color: white;
         padding: 1rem 1.5rem;
         font-weight: 500;
@@ -118,6 +126,8 @@
         font-weight: bold;
         margin-top: 3rem;
         margin-bottom: 0.75rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         color: white;
         line-height: 1.5;
       }
@@ -201,10 +211,10 @@
       <section>
         <div class="text-center">
           <h3>Kruhay!</h3>
-          <h1>Welcome to Madrangca</h1>
-          <h2>San Jose, Antique</h2>
+          <h1>Kingscourt Travellers' Inn</h1>
+          <p class="text-base hidden sm:display sm:text-2xl sm:font-medium text-stone-300">San Jose de Buenavista, <br>Antique, Philippines</p>
 
-          <div>
+          <div class="hero-cta-wrapper">
             <a href="#rooms" class="hero-cta">View Rooms</a>
           </div>
         </div>
@@ -214,7 +224,7 @@
       <span>✦</span>
     </section>
     <section class="text-stone-600 max-w-6xl mx-auto px-4 pt-10 mb-10">
-      <div class="text-center mb-10">
+      <div class="text-center">
         <h2
           class="text-3xl font-bold text-[#4f3822] tracking-tight mb-3 sm:mb-6"
         >
@@ -230,7 +240,7 @@
           <div class="relative">
             <img
               src="/img/bedroom-a.jpg"
-              alt="1-Bedroom Setup"
+              alt="1-Bedroom"
               class="w-full h-48 object-cover"
             />
 
@@ -242,10 +252,20 @@
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
-              <h3 class="text-xl font-bold text-[#4f3822]">1-Bedroom Setup</h3>
+              <h3 class="text-xl font-bold text-[#4f3822]">1-Bedroom</h3>
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
                 <li class="flex items-center">
+                  <span class="text-orange-600 mr-2">💳</span> 1800 php/night
+                </li>
+                <li class="flex items-center">
+                  <span class="text-orange-600 mr-2">💳</span> 1900 php/night for rooms with garage parking
+                </li>
+                <li class="flex items-center">
                   <span class="text-orange-600 mr-2">✓</span> One bed
+                </li>
+                <li class="flex items-center">
+                  <span class="text-orange-600 mr-2">✓</span>
+                  Additional seating area
                 </li>
                 <li class="flex items-center">
                   <span class="text-orange-600 mr-2">✓</span> Air Conditioning
@@ -273,7 +293,7 @@
           <div class="relative">
             <img
               src="/img/bedroom-concept.jpg"
-              alt="1-Bedroom Setup"
+              alt="1-Bedroom"
               class="w-full h-48 object-cover"
             />
 
@@ -285,8 +305,11 @@
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
-              <h3 class="text-xl font-bold text-[#4f3822]">2-Bedroom Setup</h3>
+              <h3 class="text-xl font-bold text-[#4f3822]">2-Bedroom</h3>
               <ul class="mt-4 space-y-2 text-sm text-stone-600">
+                <li class="flex items-center">
+                  <span class="text-orange-600 mr-2">💳</span> 800 php - 1600 php/night
+                </li>
                 <li class="flex items-center">
                   <span class="text-orange-600 mr-2">✓</span> Two Beds
                 </li>
@@ -324,7 +347,7 @@
           <div>
             <img
               src="/img/bedroom-c.jpg"
-              alt="1-Bedroom Setup"
+              alt="1-Bedroom"
               class="w-full h-48 object-cover"
             />
           </div>
@@ -337,11 +360,7 @@
                 <li class="flex items-center">
                   <span class="text-orange-600 mr-2">✓</span>
                   Call to reserve multiple rooms.
-                </li>
-                <li class="flex items-center">
-                  <span class="text-orange-600 mr-2">✓</span>
-                  Additional seating area
-                </li>
+                </li>                
                 <li class="flex items-center">
                   <span class="text-orange-600 mr-2">✓</span>
                   Budget-friendly group rates
@@ -360,8 +379,7 @@
     <!-- ⭐ NEW ROOMS SECTION GOES HERE -->
     <section id="album" class="max-w-6xl mx-auto px-4 py-4">
       <section
-          class="pt-2 text-center text-[#877350] py-6 sm:py-10"
-          id="contact-us"
+          class="pt-2 text-center text-[#877350] py-4 sm:py-6"          
         >
           <span>✦</span>
         </section>
@@ -372,13 +390,15 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">              
         <img src="/img/bedroom-a.jpg" alt="" class="rounded-lg shadow-sm" />
         <img src="/img/bedroom-a1.jpg" alt="" class="rounded-lg shadow-sm" />
         <img src="/img/bedroom-c.jpg" alt="" class="rounded-lg shadow-sm" />
         <img src="/img/exterior.jpg" alt="" class="rounded-lg shadow-sm" />
+        <img src="/img/front.jpg" alt="" class="rounded-lg shadow-sm" /> 
         <img src="/img/exterior-1.jpg" alt="" class="rounded-lg shadow-sm" />
         <img src="/img/shared-dining.jpg" alt="" class="rounded-lg shadow-sm" />
+        <img src="/img/center-court-yard.jpg" alt="" class="rounded-lg shadow-sm" />
       </div>
     </section>
 
@@ -502,8 +522,10 @@
           >
             Our Location
           </h3>
-          <ul class="text-base text-stone-600 mb-4 list-style=none space-y-2">
-            <li>📍 Madrangca, San Jose, Antique, Philippines</li>
+          <ul class="text-base text-stone-600 mb-4 list-style=none space-y-2" id="find-us">
+            <li>📍 Peña Street, Madrangca, </li> 
+              <li class="indent-7">San Jose de Buenavista, </li>
+              <li class="indent-7"> 5700 Antique, Philippines</li>
             <li>🚗 Easy access from Evelio B. Javier Airport</li>
             <li>⛱️ Short walk to Madrangca beach</li>
           </ul>
@@ -529,23 +551,22 @@
     </section>
 
     <footer class="bg-[#4f3822] text-stone-200 text-sm py-8 px-4 mt-10">
-      <div
-        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4"
-      >
-        <div class="text-center sm:text-left">
-          <p class="font-bold text-stone-200">Kingscourt Travellers' Inn</p>
-          <p class="mt-0.5">
-            Madrangca, San Jose, Antique, Western Visayas, Philippines
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="flex flex-col text-center sm:text-left sm:ml-6">
+          <p class="font-bold text-stone-200 mb-4rem">Kingscourt Travellers' Inn</p>
+          <p class="mt-4rem">
+            Peña Street, Madrangca, <br>
+            San Jose de Buenavista, 5700 Antique, Philippines
           </p>
         </div>
-        <div class="text-center sm:text-left">
-          <p class="mt-1rem mb-1rem text-stone-100">
+        <div class="flex flex-col text-center sm:text-left">
+          <p class="mt-3rem mb-2rem text-stone-100">
             Providing warm, clean, and affordable getaways for travelers and
             locals alike.
           </p>
         </div>
-        <div>
-          <p class="mt-3rem mb-2rem>">
+        <div class="flex flex-col text-center sm:text-left">
+          <p class="mt-3rem mb-2rem">
             © 2026 Kingscourt Travellers' Inn. All rights reserved.
           </p>
         </div>
