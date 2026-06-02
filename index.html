@@ -22,10 +22,7 @@
         --sand: #beae7e;
         --olive-wood: #877350;
         --deep-walnut: #4f3822;
-      }
-      body {
-        border: none;
-      }
+      }      
       .container {
         max-width: 1400px;
         margin: 0 auto;
@@ -39,53 +36,57 @@
         background-position: center;
         height: 100vh;
       }
-      header .logo-text {
-        font-family: "Lato", sans-serif;
-        font-size: 1.25rem;
-        font-weight: bold;
-        color: var(--ruby-red);
-      }
-      header a {
-        display: inline-block;
-        background-color: var(--ruby-red);
-        color: white;
-        font-weight: bold;
-        font-size: 1.25rem;
-        font-family: "Lato", sans-serif;
-        text-decoration: none;
-        border-radius: 0.4rem;
-        text-align: center;
-        height: auto;
-        margin-top: 12rem;
-      }
+   
       header button {
         padding: 0.75rem 1.5rem;
         color: white;
         background-color: var(--deep-walnut);
+      }      
+      /* Full-width background bar */
+      .nav-bar {
+        width: 100%;
+        background: #111;
+        opacity: 0.65;
+        color: #eee;
+        padding-block: 1rem; /* vertical padding only */
       }
-      header nav {
-        background-color: white;
-        opacity: 0.6;
-        margin-left: 0;
-        margin-right: 0;
-      }
-      .nav-container {
+
+      /* Centered content container */
+      .nav-inner {
+        max-width: 900px;      /* match your article width */
+        margin-inline: auto;   /* center it */
+        padding-inline: 1.5rem; /* same horizontal breathing room as articles */
         display: flex;
         justify-content: space-between;
-        margin-left: 0;
-        margin-right: 0;
+        align-items: center;
+      }
+
+      /* Logo */
+      .nav-logo {
+        font-size: 1.25rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        font-kerning: normal;
+        color: white;
+      }
+
+      /* Links */
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+        margin: 0;
         padding: 0;
       }
-      nav a {
-        color: var(--deep-walnut);
+
+      .nav-links a {
         text-decoration: none;
-        background-color: transparent;
-        padding: 1rem;
-        margin: 0 0.25rem;
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 500;
       }
-      .nav-links a:hover {
-        color: var(--ruby-red);
-      }
+
       .hero-cta {
         padding: 0.75rem 1.25rem;
         background: var(--sand);
@@ -108,7 +109,7 @@
         background-color: var(--deep-walnut);
         color: white;
         padding: 1rem 1.5rem;
-        font-weight: bold;
+        font-weight: 500;
         font-size: 0.875rem;
         font-family: "Poppins", sans-serif;
         text-align: center;
@@ -144,10 +145,16 @@
           padding-top: 1rem;
           padding-bottom: 1rem;
         }
+
+        .nav-logo {
+          margin: 0 auto;       /* centers it horizontally */
+          text-align: center;   /* centers text inside the logo */
+          display: block;       /* ensures margin auto works */
+          font-size: 1rem;
+        }  
+
         .nav-links {
-          gap: 1.5rem;
-          display: flex;
-          margin-top: 1rem;
+          display: none;
         }
         .hero-cta {
           margin-top: 4rem;
@@ -183,15 +190,15 @@
       <p>Call For Reservations - Therese: 0970-294-2566</p>
     </div>
     <header>
-      <nav>
-        <div class="nav-container">
+      <nav class="nav-bar">
+        <div class="nav-inner">
           <!-- Logo -->
-          <a href="#" class="logo-text">
+          <a href="#" class="nav-logo">
             <span> Kingscourt Travellers' Inn </span>
           </a>
           <!-- Right-side navigation -->
           <div class="nav-links">
-            <a href="#rooms"> Our Rooms </a>
+            <a href="#rooms"> Rooms </a>
             <a href="#contact-us"> Contact Us </a>
             <a href="#find-us"> Find Us </a>
           </div>
@@ -217,7 +224,7 @@
         <h2
           class="text-3xl font-bold text-[#4f3822] tracking-tight mb-3 sm:mb-6"
         >
-          Our Budget-Friendly Rooms
+          Budget-Friendly Rooms
         </h2>
         <p class="mb-20">For couples, family reunions, and festival goers.</p>
       </div>
@@ -529,7 +536,7 @@
 
     <footer class="bg-[#4f3822] text-stone-200 text-sm py-8 px-4">
       <div
-        class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4"
+        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4"
       >
         <div class="text-center sm:text-left">
           <p class="font-bold text-stone-200">Kingscourt Travellers' Inn</p>
