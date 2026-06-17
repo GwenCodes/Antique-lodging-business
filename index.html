@@ -187,6 +187,22 @@
           margin: 0.25rem 0;
         }
       }
+      .social-center {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px; /* space between icon and text */
+          text-decoration: none;
+        }
+
+      .social-link:hover {        
+        font-weight: bold;
+        color: #1877F2        
+      }
       .video-gallery {
           display: grid;
           grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -445,6 +461,7 @@
         >
           Let's Get Social
         </h2>
+        
         <p class="mb-10 sm:mb-20">See our what our visitors see and connect with us!</p>
       </div>
       <section class="video-gallery">
@@ -591,6 +608,27 @@
                 <li>💳 Gcash payment accepted</li>
                 <li>✨ No booking app needed!</li>
                 <li>🚶‍♂️ Walk-ins welcome</li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100045842036176"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit our Facebook page"
+                    class="social-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="#1877F2"
+                      aria-hidden="true"
+                    >
+                      <path d="M24 12a12 12 0 10-13.88 11.85v-8.39H7.08V12h3.04V9.41c0-3 1.79-4.66 4.53-4.66 1.31 0 2.68.23 2.68.23v2.95h-1.51c-1.49 0-1.95.92-1.95 1.87V12h3.32l-.53 3.46h-2.79v8.39A12 12 0 0024 12z"/>
+                    </svg>
+
+                    <span>Message us on Facebook</span>
+                  </a>
+                </li>         
               </ul>
             </div>
           </div>
